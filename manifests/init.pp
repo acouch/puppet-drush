@@ -1,6 +1,6 @@
 class drush {
 
-	include drush::params
+    include drush::params
 
     package {['git', 'php5-cli', 'php-pear'] :
         ensure => present,
