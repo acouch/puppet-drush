@@ -12,6 +12,6 @@ The particular branch of Drush which is required is set in the $branch_name vari
 
 ## Notes
 
-Thanks to the <a href="git://gist.github.com/305778.git">Pear provider gist</a> from <a href="https://gist.github.com/jakemcgraw">jakemcgraw</a>.
+Thanks to the <a href="https://gist.github.com/305778">Pear provider gist</a> from <a href="https://github.com/jakemcgraw">jakemcgraw</a>.
 
 Additional thanks to eric0, gniks and nate_h from the #puppet irc channel.
