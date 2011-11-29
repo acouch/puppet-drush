@@ -4,14 +4,16 @@ This puppet module allows the installation of drush from the git repository at d
 
 ## Usage
 
-It can be included via:
+Prerequisites for use include the need to set
+
+    pluginsync=true
+
+Within your puppet.conf. Once this has been set, the drush module can be included as normal, for example:
 
     include drush
 
 The particular branch of Drush which is required is set in the $branch_name variable in drush::params.
 
 ## Notes
-
-Thanks to the <a href="https://gist.github.com/305778">Pear provider gist</a> from <a href="https://github.com/jakemcgraw">jakemcgraw</a>.
 
 Additional thanks to eric0, gniks and nate_h from the #puppet irc channel.
