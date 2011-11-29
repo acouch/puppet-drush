@@ -1,5 +1,11 @@
 # Puppet PHP PEAR Package support
-# Place file under /etc/puppet/modules/custom/plugins/puppet/provider/package/pear.rb
+#
+# Originally forked from https://gist.github.com/305778 by jvc26
+#
+# == Instructions for use:
+#     This file should be put within {module}/lib/puppet/provider/package/pear.rb
+#
+#     In order for it to be loaded, you require pluginsync=true set within your puppet.conf
 
 require 'puppet/provider/package'
 
