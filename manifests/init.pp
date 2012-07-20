@@ -25,21 +25,17 @@ class drush {
 
     include drush::params
 
-    package {['git', 'php5-cli', 'php-pear'] :
-        ensure => present,
-    }
-
     package { 'Console_Table':
         ensure   => present,
         provider => pear,
-        require  => Package['php-pear'],
+        require  => Package['php53'],
     }
 
     exec { 'fetch-drush':
         cwd     => '/tmp',
         command => "/usr/bin/git clone --branch $drush::params::branch_name http://git.drupal.org/project/drush.git",
         creates => '/tmp/drush',
-        require => Package['php5-cli', 'php-pear', 'Console_Table', 'git'], 
+        require => Package['php53', 'Console_Table'], 
     }
 
     file { '/usr/local/lib/drush':
