@@ -1,6 +1,6 @@
 # puppet-drush
 
-This puppet module allows the installation of drush from the git repository at drupalcode.org. At present it pulls the most recent release of drush at the time of writing, however this will be converted to a more generic option soon.
+Install drush and console_table.
 
 ## Usage
 
@@ -12,8 +12,8 @@ Within your puppet.conf. Once this has been set, the drush module can be include
 
     include drush
 
-The particular branch of Drush which is required is set in the $branch_name variable in drush::params.
+The particular branch of Drush which is required is set in the $branch variable.
 
 ## Notes
 
-Additional thanks to eric0, gniks and nate_h from the #puppet irc channel.
+Initially forked from https://github.com/jvc26/puppet-drush
