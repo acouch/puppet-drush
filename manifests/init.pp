@@ -1,4 +1,4 @@
-class drush ($branch = "7.x-4.x") {
+class drush ($branch = "7.x-5.x") {
 
     package { 'Console_Table':
         ensure   => present,
@@ -7,7 +7,7 @@ class drush ($branch = "7.x-4.x") {
     }
 
     exec { 'fetch-drush':
-        cwd     => '/tmp',
+        cwd     => '/usr/local/lib',
         command => "/usr/bin/git clone --branch $branch http://git.drupal.org/project/drush.git",
         # Won't run if exists: http://www.puppetcookbook.com/posts/run-exec-if-file-absent.html.
         creates => '/usr/local/lib/drush',
